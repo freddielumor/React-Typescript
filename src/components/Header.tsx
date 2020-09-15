@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.scss";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <header className="header">
       <Link className="header__brand" to="/">
@@ -13,10 +13,10 @@ const Header = () => {
         <Link className="header__navLink" to="/">
           Home
         </Link>
-        <Link className="header__navLink" to="/add">
-          Team
+        <Link className="header__navLink" to="/teams">
+          Teams
         </Link>
-        <Link className="header__navLink" to="/user">
+        <Link className="header__navLink" to="/players">
           Players
         </Link>
       </nav>
