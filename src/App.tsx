@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Players from './pages/Players';
 import Teams from './pages/Teams';
-import { TEAMS_DATA_ENDPOINT } from './utils/apiCongig';
+import { TEAMS_DATA_ENDPOINT } from './utils/apiConfig';
 import './app.scss';
 
 export interface teamDataItem {
