@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 
 type TeamCardProps = {
   name: string;
@@ -23,7 +23,7 @@ const TeamCard: React.FC<TeamCardProps> = ({
         <img className="teamCard__badge" src={badge} alt="badge" />
         <hr className="postCard__divider" />
         <h4 className="teamCard__name">{name}</h4>
-        <p className="postCard__nickname">{formed}</p>
+        <p className="postCard__nickname">{nickname}</p>
         <p className="postCard__formed">{formed}</p>
         <p className="postCard__stadium">{stadium}</p>
         <a className="postCard__website" href={website}>

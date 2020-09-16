@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
@@ -8,7 +8,7 @@ import "./app.scss";
 
 type Props = {};
 
-const App: React.FC<Props> = (props) => {
+const App: React.FC<Props> = () => {
   return (
     <div className="app">
       <Header />

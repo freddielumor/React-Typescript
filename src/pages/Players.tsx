@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 
 const Players: React.FC = () => <h1>PLAYERS</h1>;
 
