@@ -1,5 +1,5 @@
-import * as React from "react";
+import * as React from 'react';
 
-const Home: React.FC = () => <h1>HOME</h1>;
+const Home: React.FC = () => <h1 className="page__title">HOME</h1>;
 
 export default Home;
