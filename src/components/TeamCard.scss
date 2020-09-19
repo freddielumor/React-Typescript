@@ -1,0 +1,23 @@
+.teamCard {
+  border: 1px solid #eee;
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  @media only screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+
+  &__badge {
+    min-height: 7rem;
+    img {
+      max-width: 30%;
+    }
+  }
+}

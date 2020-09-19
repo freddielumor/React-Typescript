@@ -15,22 +15,24 @@ const Teams: React.FC<ITeamProps> = () => {
   }, []);
 
   return (
-    <>
-      <h1>TEAMS</h1>
-      {data.map(({ idTeam, strTeam, strAlternate, intFormedYear, strStadium, strWebsite, strTeamBadge }) => {
-        return (
-          <TeamCard
-            key={idTeam}
-            name={strTeam}
-            nickname={strAlternate}
-            formed={intFormedYear}
-            stadium={strStadium}
-            website={strWebsite}
-            badge={strTeamBadge}
-          />
-        );
-      })}
-    </>
+    <div className="page">
+      <h1 className="page__title">TEAMS</h1>
+
+      <div className="page__content">
+        {data.map(({ idTeam, strTeam, intFormedYear, strStadium, strWebsite, strTeamBadge }) => {
+          return (
+            <TeamCard
+              key={idTeam}
+              name={strTeam}
+              formed={intFormedYear}
+              stadium={strStadium}
+              website={strWebsite}
+              badge={strTeamBadge}
+            />
+          );
+        })}
+      </div>
+    </div>
   );
 };
 
